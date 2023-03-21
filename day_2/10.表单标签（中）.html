@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- 1.输入类型  required当前的输入框不能为空 value输入框的值-->
+    <form action="">
+        <div>
+            <input type="text" placeholder="文本框" required value="">
+        </div>
+
+        <div>
+            <input type="password" placeholder="密码框" required>
+        </div>
+        <div>
+            <input type="number" placeholder="数字框" min="10" max="100" required>
+        </div>
+        <div>
+            <input type="email" placeholder="邮箱输入框" required>
+        </div>
+        <div>
+            <input type="tel" placeholder="电话输入框" required>
+        </div>
+        <div>
+            <input type="url" placeholder="网址输入框" required>
+        </div>
+        <div>
+            <input type="search" placeholder="搜索框" required>
+        </div>
+        <input type="submit">
+    </form>
+
+    <!-- 2. 日期类型 -->
+    <form action="">
+        <div>
+            <input type="week" placeholder="年和周组成">
+        </div>
+        <div>
+            <input type="month" placeholder="年和月组成">
+        </div>
+        <div>
+            <input type="time" placeholder="时间 时和分">
+        </div>
+        <div>
+            <input type="date" placeholder="年 月 日 " >
+        </div>
+        <div>
+            <input type="datetime-local" placeholder="年 月 日 时 分">
+        </div>
+    </form>
+
+
+    <!-- 3.单选框radio 复选框 配合name属性  checked选中-->
+    <form action="">
+        <div>
+            性别：
+            <input type="radio" name="sex" checked>男
+            <input type="radio" name="sex" >女
+            <input type="radio" name="sex">未知
+        </div>
+
+        <div>
+            爱好：
+            <input type="checkbox" name="love"> 打篮球
+            <input type="checkbox" name="love" checked> 唱歌
+            <input type="checkbox" name="love"> 跳舞
+        </div>
+        <input type="submit">
+    </form>
+
+    <!-- https:www.baidu.com/?user=10086&password=123 -->
+
+</body>
+</html>

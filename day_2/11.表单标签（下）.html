@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="user">需要填写的账号：</label>
+    
+    <!-- 4.按钮类型 -->
+    <form action="">
+        <div>
+            <input type="text" placeholder="账号">
+        </div>
+
+        <div>
+            <input type="password" placeholder="密码">
+        </div>
+        <!-- image 带图像的提交按钮 src指的图片路径 alt指的是无图片的显示文字-->
+        <div>
+            <input type="image" src="./image/1.jpg" alt="无图片">
+        </div>
+        <!--提交按钮submit value 值 -->
+        <div>
+            <input type="submit" value="提交按钮" >
+        </div>
+        <!-- 重置按钮reset -->
+        <div>
+            <input type="reset" value="清空">
+        </div>
+    </form>
+
+
+    <!-- 5. 特殊类型 -->    
+    <form action="">
+
+        <!-- 文件类型 accept规定选择的文件类型-->
+        <input type="file" accept=".png">
+        <!-- 颜色类型 -->
+        <input type="color">
+        <!-- 范围控制类型 默认50% 这里面的value取值范围是0~100-->
+        <input type="range" value="0">
+        <!-- 多行文本输入框 cols列默认20 rows行默认2  style="resize:none"不允许拖拽-->
+        <textarea name="textarea" id="t" cols="40" rows="5" style="resize:none"></textarea>
+
+        <!-- 选项菜单标签 -->
+        <!-- select下拉菜单标签 进行选择 -->
+        <!-- option 选项标签 -->
+        <!-- 支持属性  
+            disabled 禁止选择
+            selected 默认选择
+        -->
+        <select>
+            <option value="0" disabled >---请选择省份---</option>
+            <option value="1" selected>广东省</option>
+            <option value="2">广西省</option>
+            <option value="3" >江西省</option>
+        </select>
+
+        <!-- option标签可以放在optgroup标签里面进行选择分组 lable属性指的分组的内容  -->
+        <select>
+            <optgroup label="喜欢的水果">
+                <option>苹果</option>
+                <option>香蕉</option>
+                <option>菠萝</option>
+            </optgroup>
+            <optgroup label="喜欢的蔬菜">
+                <option>西红柿</option>
+                <option>西蓝花</option>
+                <option>西葫芦</option>
+            </optgroup>
+        </select>
+
+
+        <!-- label标签 为input做说明的，提示的作用，提高用户体验 -->
+        <!-- 支持的属性 -->
+        <!-- for=id名  id就是需要产生联动的元素的id名 -->
+
+        <label for="user">需要填写的账号：</label>
+        <input type="text" id="user">
+
+    </form>
+
+
+
+
+</body>
+
+</html>
